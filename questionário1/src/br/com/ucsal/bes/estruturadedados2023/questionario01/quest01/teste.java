@@ -1,3 +1,12 @@
+/*
+ * 
+ * 
+ * 
+ * @emanuelAP
+ * https://github.com/mano3queijos
+ * 
+ * 
+ */
 package br.com.ucsal.bes.estruturadedados2023.questionario01.quest01;
 
 import java.util.Scanner;
@@ -15,19 +24,26 @@ public class teste {
 
 		
 		System.out.println(cb.getSaldo());
-		System.out.println("Informe o Saldo da conta bancarioa");
-		Double saldo = scan.nextDouble();
+		System.out.println("dep");
+		Double saldo = 30.0;
 		
-		System.out.println(saldo);
+		
 		
 		cb.depositar(saldo);
-		
-	
-
+		cb.atualizarSaldoAposDeposito(saldo);
 		
 		System.out.println(cb);
 		try {
+			
 			cb.scarDinheiro(20.0);
+			System.out.println(cb);
+		cb.atualizarSaldoAposSaque(20.0);
+
+			
+
+			cb.scarDinheiro(10000000.0);
+			
+			
 		} catch (ContaBacariaException e) {
 			System.out.println(e.getMessage());
 		}

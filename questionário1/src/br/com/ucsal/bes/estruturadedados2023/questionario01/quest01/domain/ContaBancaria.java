@@ -1,3 +1,12 @@
+/*
+ * 
+ * 
+ * 
+ * @emanuelAP
+ * https://github.com/mano3queijos
+ * 
+ * 
+ */
 package br.com.ucsal.bes.estruturadedados2023.questionario01.quest01.domain;
 
 import br.com.ucsal.bes.estruturadedados2023.questionario01.quest01.exception.ContaBacariaException;
@@ -33,13 +42,13 @@ public class ContaBancaria {
 	}
 
 	public void atualizarSaldoAposSaque(double valorAlterado) {
-		System.out.println("Saldo antigo: " + (saldo - valorAlterado));
+		System.out.println("Saldo antigo: " + (saldo + valorAlterado));
 		System.out.println("Saldo atualizado" + this.saldo);
 	}
 
 	public void atualizarSaldoAposDeposito(double valorAlterado) {
 
-		System.out.println("Saldo antigo: " + (saldo + valorAlterado));
+		System.out.println("Saldo antigo: " + (saldo - valorAlterado));
 		System.out.println("Saldo atualizado" + this.saldo);
 	}
 
